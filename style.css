@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #ececec;
+}
+
+.valores-cartas {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgba(251, 251, 251);
+    height: 90%;
+}
+
+header {
+    height: 50px;
+    margin: 50px 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ececec;
+}
+
+.header-left {
+    align-content: flex-start;
+    img {cursor: pointer};
+    
+}
+
+.header-right {
+    align-content: flex-end;
+    img {cursor: pointer};
+}
+
+#novo-jogo {
+    margin: 0 24px 0 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+}
+
+.section {
+    margin: 0 50px;
+}
+
+.pontuacao-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1,
+.section2 {
+    position: relative;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 {
+    background-color: #ececec;
+}
+
+.section2 {
+    background-color: #B9DCD4;
+}
+
+
+.pontuacao {
+    width: 170px;
+    height: 190px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 154px;
+}
+
+.operacao-pontuacao {
+    padding: 50px;
+    cursor: pointer;
+    /* height: 190px; */
+}
+
+.nome-time-div {
+    display: flex;
+    justify-content: center;
+}
+
+.nome-time {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* debugs */
+
+.debug-1 {
+    background-color: lightblue;
+}
+
+.debug-2 {
+    background-color: lightcoral;
+}
+
+.border {
+    border: 1px solid red;
+}

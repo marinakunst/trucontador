@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruContador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="valores-cartas" src="img/cards-value.png" alt="Valores das Cartas" id="valores-cartas" onclick="verValoresCartas()">
+    <header>
+        <div class="header-left">
+            <img src="icons/new-game.png" alt="Novo Jogo" id="novo-jogo" onclick="window.location.reload()">
+            <img src="icons/settings.png" alt="Configurações" id="configuracoes" onclick="configurarPontuacao()">
+        </div>
+        <div class="header-right">
+            <img src="icons/rules.png" alt="Regras" id="regras" onclick="verValoresCartas()">
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="section1">
+            <div class="pontuacao-div">
+                <img class="operacao-pontuacao" src="icons/minus.png" alt="Menos" id="menos-eu" onclick="diminuirPontuacao('pontuacao-eu')">
+                <label class="pontuacao" id="pontuacao-eu">0</label>
+                <img class="operacao-pontuacao" src="icons/plus.png" alt="Mais" id="mais-eu" onclick="aumentarPontuacao('pontuacao-eu')">
+            </div>
+            <div class="nome-time-div">
+                <label for="" class="nome-time">Eu</label>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="pontuacao-div">
+                <img class="operacao-pontuacao" src="icons/minus.png" alt="Menos" id="menos-oponente" onclick="diminuirPontuacao('pontuacao-oponente')">
+                <label class="pontuacao" id="pontuacao-oponente">0</label>
+                <img class="operacao-pontuacao" src="icons/plus.png" alt="Mais" id="mais-oponente" onclick="aumentarPontuacao('pontuacao-oponente')">
+            </div>
+            <div class="nome-time-div">
+                <label for="" class="nome-time">Oponente</label>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
