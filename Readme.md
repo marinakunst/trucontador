@@ -11,4 +11,4 @@ Por padrão, a pontuação máxima é de 24 pontos. No botão de configurações
 Cola para valores das cartas:
 O botão de ajuda mostra a sequência de valores de cada carta, do maior para o menor.
 
-Acesse em: [link](https://exemplo.com/)
+Acesse em: [link](https://trucontador.vercel.app/)
